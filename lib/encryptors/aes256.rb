@@ -1,4 +1,4 @@
-require 'digest/aes'
+require 'aes'
 
 module Devise
   module Encryptors
