@@ -3,7 +3,7 @@ require 'aes'
 module Devise
   module Encryptors
     class Aes256 < Base
-      class << self
+      #class << self
         # Returns a Base64 encrypted password where pepper is used for the key,
         # and the initialization_vector is randomly generated and prepended onto
         # encoded ciphertext
@@ -20,7 +20,7 @@ module Devise
         def decrypt(encrypted_password, pepper)        
           ::AES.decrypt(encrypted_password, pepper)
         end
-      end
+      #end
     end
   end
 end
